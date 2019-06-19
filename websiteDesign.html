@@ -563,7 +563,7 @@
         function animateCards(target) {
             var animationImg = anime({
                 targets: target + ' > div > div.feature__img',
-                translateY: [150, 0],
+                translateY: [-50, 0],
                 opacity: [0, 1],
                 loop: false,
                 delay: 100,
@@ -572,7 +572,7 @@
             });
             var animationTitle = anime({
                 targets: target + ' > div > div.feature__title',
-                translateY: [150, 0],
+                translateY: [-50, 0],
                 delay: 250,
                 opacity: [0, 1],
                 loop: false,
@@ -581,7 +581,7 @@
             });
             var animationDesc = anime({
                 targets: target + ' > div > div.feature__desc',
-                translateY: [150, 0],
+                translateY: [-50, 0],
                 delay: 350,
                 opacity: [0, 1],
                 loop: false,
