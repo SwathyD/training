@@ -80,8 +80,8 @@
 		#heading,
 		#heading3 {
 			opacity: 0;
-			color: lavenderblush;
-			font-weight: 500;
+			color: black;
+			font-weight: 300;
 			font-size: 5vw;
 			z-index: 50;
 		}
@@ -89,8 +89,8 @@
 		#heading2,
 		#heading4 {
 			opacity: 0;
-			color: lavenderblush;
-			font-weight: 300;
+			color: gray;
+			/* font-weight: 300; */
 			font-size: 3vw;
 			z-index: 50;
 		}
@@ -124,6 +124,12 @@
 		body {
 			overflow-x: hidden;
 		}
+
+		.hero-area::before{
+			background: none !important;
+		}
+		
+		
 	</style>
 
 </head>
@@ -256,9 +262,6 @@
 		START HERO AREA
 		=================================-->
 	<section class="hero-area bgimage">
-		<div class="bg_image_holder">
-			<img src="images/hero_area_bg1.jpg" alt="background-image">
-		</div>
 		<!-- start hero-content -->
 		<div class="hero-content content_above">
 			<!-- start .contact_wrapper -->
@@ -279,9 +282,9 @@
 								</center>
 								<br>
 								<br>
-								<button class="btn btn-lg btn-light left">
+								<button class="btn btn-lg btn-primary left">
 									<span class="lnr lnr-enter"></span> START NOW! </button>
-								<button class="btn btn-lg btn-light right">
+								<button class="btn btn-lg btn-secondary right">
 									<span class="lnr lnr-bubble"></span> LEARN MORE </button>
 								<br>
 								<br>
@@ -905,10 +908,6 @@
 	<script src="js/anime.min.js"></script>
 	<script>
 		anime.timeline({ loop: true })
-			// .add({
-			// 	targets: '.upper',
-			// 	display: 'block'
-			// })
 			.add({
 				targets: '#heading',
 				scaleY: [0, 1],
@@ -922,7 +921,7 @@
 				opacity: [0, 1],
 				translateX: [0, 100],
 				duration: 100,
-				delay: 400,
+				delay: 100,
 				easing: 'easeOutExpo'
 			}).add({
 				targets: '.upper .left',
@@ -936,7 +935,7 @@
 				opacity: [0, 1],
 				translateY: [100, 0],
 				duration: 300,
-				delay: 500,
+				delay: 300,
 				easing: 'linear'
 			}).add({
 				targets: '#image',
@@ -944,7 +943,7 @@
 				scaleX: [0, 1],
 				opacity: [0, 1],
 				// translateY: '-=100vh',
-				duration: 5000,
+				duration: 2500,
 				delay: 1000,
 				easing: 'easeOutExpo'
 			}).add({
@@ -966,7 +965,7 @@
 				scaleY: [0, 0.8],
 				opacity: [0, 1],
 				translateY: [80, 0],
-				duration: 1000,
+				duration: 300,
 				delay: 100,
 				easing: 'linear'
 			}).add({
@@ -1096,7 +1095,7 @@
 				delay: 250,
 				opacity: [0, 1],
 				loop: false,
-				duration: 5000,
+				duration: 2500,
 				easing: 'easeOutExpo'
 			});
 			var animationLeft = anime({
@@ -1105,7 +1104,7 @@
 				delay: 250,
 				opacity: [0, 1],
 				loop: false,
-				duration: 5000,
+				duration: 2500,
 				easing: 'easeOutExpo'
 			});
 		}
